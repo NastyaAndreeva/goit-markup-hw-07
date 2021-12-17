@@ -1,0 +1,40 @@
+.clients-list {
+    display: flex;
+}
+
+.clients-title {
+    font-size: 36px;
+    line-height: 1.18;
+    letter-spacing: var(--main-letter-spacing);
+    font-weight: var(--secondary-title-weight);
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.clients-item {
+    width: 170px;
+    height: 92px;
+    display: block;
+    border: 1px solid #AFB1B8;
+    border-radius: 3px;
+    color: #afb1b8;
+    transition: color var(--transform-time) var(--transform-function), border var(--transform-time) var(--transform-function);
+}
+
+.clients-item-icon.fourth {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.clients-item-icon {
+    fill: currentColor;
+}
+.clients-item:hover, .clients-item:focus {
+    color: var(--accent-text-color);
+    border: 1px solid var(--accent-text-color);
+}
+
+.clients-list li:not(:last-child) {
+    margin-right: 30px;
+}

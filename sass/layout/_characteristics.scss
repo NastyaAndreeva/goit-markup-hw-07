@@ -1,0 +1,19 @@
+.characteristics-list {
+    list-style: none;
+    display: flex;
+}
+
+.characteristics .title {
+    font-weight: var(--secondary-title-weight);
+    font-size: var(--main-text-size);
+    letter-spacing: var(--main-letter-spacing);
+    line-height: 1.172;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+}
+
+.characteristics .text {
+    line-height: 1.714;
+    letter-spacing: var(--main-letter-spacing);
+    color: var(--secondary-text-color);
+}
