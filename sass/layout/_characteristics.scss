@@ -1,19 +1,31 @@
-.characteristics-list {
+.characteristics__list {
     list-style: none;
     display: flex;
 }
 
-.characteristics .title {
-    font-weight: var(--secondary-title-weight);
-    font-size: var(--main-text-size);
-    letter-spacing: var(--main-letter-spacing);
-    line-height: 1.172;
-    text-transform: uppercase;
-    margin-bottom: 10px;
+.characteristics {
+    &__title {
+        @include font(var(--main-text-size), 1.172, var(--main-letter-spacing), var(--secondary-title-weight));
+        text-transform: uppercase;
+        margin-bottom: 10px;
+}
+    &__text {
+        @include font(var(--main-text-size), 1.714, var(--main-letter-spacing), 400);
+        color: var(--secondary-text-color);
+    }
+    &__detail {
+        width: 270px;
+        margin-right: 30px;
+    }
+    &__icon {
+        width: 270px;
+        height: 120px;
+        margin-bottom: 30px;
+    }
 }
 
-.characteristics .text {
-    line-height: 1.714;
-    letter-spacing: var(--main-letter-spacing);
-    color: var(--secondary-text-color);
+.characteristics__detail {
+    &:last-child {
+        margin-right: 0;
+    }
 }
